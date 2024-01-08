@@ -24,6 +24,7 @@
 .top_header{
     background-color: var(--color-purple);
     background-image: linear-gradient(to right, #791c1c, var(--color-purple), #791c1c);
+    position: relative;
 }
 .content_header{
     padding: 30px 10px;
@@ -58,6 +59,8 @@
     align-content: space-between;
     width: 32px;
     height: 32px;
+    display: none;
+    cursor: pointer;
 }
 .color-purple{
     color: var(--color-purple)!important;
@@ -505,4 +508,196 @@ footer.footer ul li a{
 }
 .bottom_footer a{
     color: var(--color-dark);
+}
+.header_menu{
+    display: none;
+}
+.over_search{
+    background-color: var(--color-purple);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 10%0;
+    width: 100%;
+    display: none;
+    transition: all .23s;
+}
+.open_over_search{
+    display: flex!important;
+}
+.over_search form{
+    background-color: var(--color-white);
+    width: 800px;
+    padding: 5px;
+    border-radius: 30px;
+}
+.over_search form input{
+    width: calc(100% - 30px);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 10px;
+}
+.over_search button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.col_btn{
+    flex-basis: 40%;
+}
+.col_logo{
+    flex-basis: 25%;
+}
+.col_contact{
+    flex-basis: 35%;
+}
+
+@media(max-width: 992px){
+    .btn_menu{
+        display: flex;
+        margin-right: 20px;
+    }
+    .header_social, .header_contact{
+        display: none!important;
+    }
+    .bottom_header{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        min-height: 100vh;
+        background-color: var(--color-white);
+        box-shadow: 2px 2px 10px rgba(10, 10, 10, .8);
+        z-index: 101;
+        overflow: auto;
+        transition: all .3s;
+    }
+    .open_bottom_header{
+        left: 0!important;
+    }
+    .bottom_header nav.menu{
+        display: flex;
+        border: none;
+    }
+    .bottom_header nav.menu ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bottom_header nav.menu ul li{
+        width: 100%;
+    }
+    .bottom_header nav.menu ul li a{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+    .over_background{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(10, 10, 10, .5);
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        display: none;
+    }
+    .d-block{
+        display: block!important;
+    }
+    .header_menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .btn_close_menu{
+        display: flex;
+        color: var(--color-white);
+        padding: 20px;
+        cursor: pointer;
+    }
+    .btn_close_menu i{
+        color: var(--color-wine);
+    }
+    .over_search form{
+        width: 600px;
+    }
+    .header_date{
+        display: none;
+    }
+    .over_phone small{
+        display: none;
+    }
+    .over_phone{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media(max-width: 768px){
+    .col_btn{
+        flex-basis: 33%;
+    }
+    .col_logo{
+        flex-basis: 33%;
+    }
+    .col_contact{
+        flex-basis: 33%;
+    }
+}
+
+@media(max-width: 600px){
+    .over_search form{
+        width: 300px;
+    }
+    .col_btn{
+        flex-basis: 15%;
+    }
+    .col_logo{
+        flex-basis: 50%;
+    }
+    .col_contact{
+        flex-basis: 15%;
+    }
+    .content_items_menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header_logo a img{
+        max-width: 100px;
+    }
+    .btn_menu{
+        width: 24px;
+        height: 24px;
+    }
+    .content_header{
+        padding: 20px 10px;
+    }
+    .card_news_small{
+        flex-basis: 100%;
+    }
+    .over_cards_small{
+        flex-wrap: wrap;
+    }
+    .logo_footer{
+        text-align: center;
+        padding: 20px 10px;
+    }
+    .logo_footer img{
+        margin: auto;
+    }
+    .bottom_footer{
+        flex-wrap: wrap;
+    }
+    .card_news h3{
+        font-size: 20px;
+    }
+    .card_news, .card_news_small{
+        margin-bottom: 20px;
+    }
 }

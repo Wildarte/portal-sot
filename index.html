@@ -19,11 +19,14 @@
     </head>
 
     <body>
+
+        <div class="over_background"></div>
+
         <header class="header">
             <div class="top_header">
                 <div class="container content_header">
-                    <div class="row">
-                        <div class="col-md-5 d-flex align-items-center">
+                    <div class="row content_items_menu">
+                        <div class="col_btn d-flex align-items-center">
                             <div class="btn_menu">
                                 <div class="rec"></div>
                                 <div class="rec"></div>
@@ -40,16 +43,16 @@
                                 <p>Cascavel/PR</p>
                             </div>
                         </div>
-                        <div class="col-md-3 header_logo">
+                        <div class="col_logo header_logo">
                             <a href="">
                                 <img src="assets/img/logo-oc.png" alt="">
                             </a>
                         </div>
-                        <div class="col-md-4 d-flex over_contact">
+                        <div class="col_contact d-flex over_contact">
                             <div class="over_phone">
                                 <small>Fale conosco</small>
                                 <div class="d-flex">
-                                    <a class="btn-green" href="tel:">(45) 9.9151-5339</a>
+                                    <a class="btn-green header_contact" href="tel:">(45) 9.9151-5339</a>
                                     <button class="btn_search d-flex">
                                         <i class="bi bi-search"></i>
                                         Buscar
@@ -61,9 +64,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="over_search">
+                    <form action="">
+                        <input type="search" name="s" id="" placeholder="Pesquisar...">
+                        <button class="" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
             </div>
             
+            
             <div class="bottom_header">
+                <div class="header_menu">
+                    <div class="btn_close_menu">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                </div>
                 <div class="container">
                     <nav class="menu">
                         <ul>
@@ -613,7 +628,7 @@
 
             <div class="container content_footer">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 logo_footer">
                         <img src="assets/img/logo-oc-wine.png" alt="">
                     </div>
                     <div class="col-md-3">
@@ -662,5 +677,7 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
