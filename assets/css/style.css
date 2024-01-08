@@ -437,12 +437,72 @@ nav.menu ul li a{
     height: 4px;
     background-color: var(--color-purple);
 }
-
+.card_line_single{
+    margin: 5px 0;
+    border-bottom: 1px solid var(--color-gray2);
+    display: flex;
+    align-items: flex-start;
+}
 .card_line_single p{
     color: var(--color-wine);
 }
 .card_line_single h3{
     font-size: 18px;
     font-weight: 500;
+    color: var(--color-dark);
+}
+.card_line_single p{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.section_count{
+    counter-reset: cards;
+}
+.section_count a::before{
+    content: counter(cards);
+    counter-increment: cards;
+    font-size: 3em;
+    margin-right: 10px;
+    color: var(--color-wine);
+}
+.content_section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+footer.footer{
+    box-shadow: 2px 2px 10px var(--color-dark);
+}
+.content_footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 4px solid var(--color-wine);
+}
+footer.footer h3{
+    color: var(--color-wine);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+footer.footer ul{
+    margin: 0;
+    padding: 0;
+    color: var(--color-dark);
+}
+footer.footer ul li a{
+    color: var(--color-dark);
+    font-size: 14px;
+}
+.bottom_footer{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.bottom_footer p{
+    margin: 0;
+}
+.bottom_footer a{
     color: var(--color-dark);
 }
