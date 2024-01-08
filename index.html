@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Portal</title>
         <meta charset="utf-8" />
         <meta
             name="viewport"
@@ -19,40 +19,50 @@
     </head>
 
     <body>
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="btn_menu">
-
+        <header class="header">
+            <div class="top_header">
+                <div class="container content_header">
+                    <div class="row">
+                        <div class="col-md-5 d-flex align-items-center">
+                            <div class="btn_menu">
+                                <div class="rec"></div>
+                                <div class="rec"></div>
+                                <div class="rec"></div>
+                            </div>
+                            <ul class="d-flex header_social">
+                                <li><a href="a"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="a"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="a"><i class="bi bi-twitter-x"></i></a></li>
+                                <li><a href="a"><i class="bi bi-youtube"></i></a></li>
+                            </ul>
+                            <div class="header_date">
+                                <p>Quarta, 04 de janeiro de 2024</p>
+                                <p>Cascavel/PR</p>
+                            </div>
                         </div>
-                        <ul>
-                            <li><a href="a"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="a"><i class="bi bi-instagram"></i></a></li>
-                            <li><a href="a"><i class="bi bi-twitter-x"></i></a></li>
-                            <li><a href="a"><i class="bi bi-youtube"></i></a></li>
-                        </ul>
-                        <div>
-                            <p>Quarta, 04 de janeiro de 2024</p>
-                            <p>Cascavel/PR</p>
+                        <div class="col-md-3 header_logo">
+                            <a href="">
+                                <img src="assets/img/logo-oc.png" alt="">
+                            </a>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <img src="assets/img/logo-oc.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <div>
-                            <small>Fale conosco</small>
-                            <a href="tel:">(45) 9.9151-5339</a>
+                        <div class="col-md-4 d-flex over_contact">
+                            <div class="over_phone">
+                                <small>Fale conosco</small>
+                                <div class="d-flex">
+                                    <a class="btn-green" href="tel:">(45) 9.9151-5339</a>
+                                    <button class="btn_search d-flex">
+                                        <i class="bi bi-search"></i>
+                                        Buscar
+                                    </button>
+                                </div>
+                                
+                            </div>
+                            
                         </div>
-                        <button class="">
-                            <i class="bi bi-search"></i>
-                        </button>
                     </div>
                 </div>
             </div>
+            
             <div class="bottom_header">
                 <div class="container">
                     <nav class="menu">
@@ -72,38 +82,105 @@
             </div>
         </header>
         <main>
-            <section>
-                <p><strong>Últimas Notícias <span>></span></strong> <span>Criança morre após ter cerca de 70% do corpo queimado em acidente na BR-376 nos Campos Gerais</span></p>
+            <section class="last_news">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="content_last_news">
+                                <p><strong>Últimas Notícias <span>></span></strong> <span>Criança morre após ter cerca de 70% do corpo queimado em acidente na BR-376 nos Campos Gerais</span></p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+                
             </section>
 
-            <section>
+            <section class="">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <article>
-                                <img src="" alt="">
-                                <a href="">Paraná</a>
-                                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                            <article class="card_news link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news.png" alt="">
+                                </a>
+                                <a href="#" class="category">Paraná</a>
+                                <h3><a href="">Cerca de  47% dos veículos do Paraná estão com o licenciamento irregular; saiba o que fazer</a></h3>
                             </article>
                         </div>
                         <div class="col-md-6">
-                            <div>
-                                <article>
-                                    <img src="" alt="">
-                                    <a href="">Paraná</a>
-                                    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                            <div class="d-flex over_cards_small">
+                                <article class="card_news_small link_hover">
+                                    <a href="#">
+                                        <img src="assets/img/news2.png" alt="">
+                                    </a>
+                                    <a href="#" class="category">Cotidiano</a>
+                                    <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
                                 </article>
-                                <article>
-                                    <img src="" alt="">
-                                    <a href="">Paraná</a>
-                                    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                <article class="card_news_small link_hover">
+                                    <a href="#">
+                                        <img src="assets/img/news3.png" alt="">
+                                    </a>
+                                    <a href="#" class="category">Policial</a>
+                                    <h3><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
                                 </article>
                             </div>
 
-                            <div>
-                                <a href="">Mais de meia tonelada de maconha é apreendida pela PRF na BR-277 no oeste do Paraná</a>
-                                <a href="">Criança morre após ter cerca de 70% do corpo queimado em acidente no BR-376 em Ponta Grossa</a>
+                            <div class="short_links">
+                                <a href="" class="short_link link_hover">Mais de meia tonelada de maconha é apreendida pela PRF na BR-277 no oeste do Paraná</a>
+                                <a href="" class="short_link link_hover">Criança morre após ter cerca de 70% do corpo queimado em acidente no BR-376 em Ponta Grossa</a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="b-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container p-top-20">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news2.png" alt="">
+                                </a>
+                                <a href="#" class="category">Paraná</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
+                        </div>
+                        <div class="col-md-3">
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news4.png" alt="">
+                                </a>
+                                <a href="#" class="category color-light-blue">Pesquisa</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
+                        </div>
+                        <div class="col-md-3">
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news5.png" alt="">
+                                </a>
+                                <a href="#" class="category">Trânsito</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
+                        </div>
+                        <div class="col-md-3">
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news6.png" alt="">
+                                </a>
+                                <a href="#" class="category color-green">Esportes</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -112,58 +189,70 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <h2>Paraná</h2>
-                        <span><i class="bi bi-plus"></i></span>
+                        <div class="col-12 header_section">
+                            <h2>Paraná</h2>
+                            <span><i class="bi bi-plus-lg"></i></span>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-9">
-                            <div class="row">
+                            <div class="row p-top-20">
                                 <div class="col-md-6">
-                                    <article>
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                    <article class="card_news link_hover">
+                                        <a href="#">
+                                            <img src="assets/img/news.png" alt="">
+                                        </a>
+                                        <a href="#" class="category">Paraná</a>
+                                        <h3><a href="">Cerca de  47% dos veículos do Paraná estão com o licenciamento irregular; saiba o que fazer</a></h3>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
-                                    <a href="">
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                    <a href="" class="card_line link_hover">
+                                        <img src="assets/img/news3.png" alt="">
+                                        <div class="info_card_line">
+                                            <p>pato Branco  </p>
+                                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                        </div>
+                                        
                                     </a>
-                                    <a href="">
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                    <a href="" class="card_line link_hover">
+                                        <img src="assets/img/news5.png" alt="">
+                                        <div class="info_card_line">
+                                            <p>Paraná</p>
+                                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                        </div>
+                                        
                                     </a>
-                                    <a href="">
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                    <a href="" class="card_line link_hover">
+                                        <img src="assets/img/news6.png" alt="">
+                                        <div class="info_card_line">
+                                            <p>Paraná</p>
+                                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <img src="" alt="">
+                        <div class="col-md-3 p-top-20">
+                            <img class="w-100" src="assets/img/ads.jpg" alt="">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row p-top-20">
                         <div class="col-md-4">
-                            <a href="">
-                                <p>Paraná</p>
+                            <a href="" class="card_simple">
+                                <h4>Paraná</h4>
                                 <p>Foragido da justiça é preso pela Polícia Federal ao desembarcar no Aeroporto de Cascavel</p>
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="">
-                                <p>Policial</p>
+                            <a href="" class="card_simple">
+                                <h4>Policial</h4>
                                 <p>Homem fica em estado grave após ser atropelado por moto na Avenida Piquiri, em Cascavel</p>
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="">
-                                <p>Marechal Candido Rondon</p>
+                            <a href="" class="card_simple">
+                                <h4>Marechal Candido Rondon</h4>
                                 <p>Pais são presos acusados de homícidio de bebê de 3 meses em Marechal, delegado fala sobre o caso</p>
                             </a>
                         </div>
@@ -171,107 +260,133 @@
                 </div>
             </section>
 
-            <section>
+            <section class="bg-gray2">
                 <div class="container">
-                    <img src="" alt="">
+                    <div class="row">
+                        <div class="col-12 p-20">
+                            <img class="w-100" src="assets/img/ads2.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section>
                 <div class="container">
                     <div class="row">
-                        <h2>Policial</h2>
-                        <span><i class="bi bi-plus"></i></span>
+                        <div class="col-12 header_section head_wine">
+                            <h2 class="color-wine">Policial</h2>
+                            <span><i class="bi bi-plus-lg"></i></span>
+                        </div>
                     </div>
-                    <div class="row">
+                    <div class="row p-top-20">
                         <div class="col-md-3">
-                            <a href="">
-                                <img src="" alt="">
-                                <p>Paraná</p>
-                                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                            </a>
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news2.png" alt="">
+                                </a>
+                                <a href="#" class="category">Paraná</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
                         </div>
                         <div class="col-md-3">
-                            <a href="">
-                                <img src="" alt="">
-                                <p>Paraná</p>
-                                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                            </a>
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news4.png" alt="">
+                                </a>
+                                <a href="#" class="category color-light-blue">Pesquisa</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
                         </div>
                         <div class="col-md-3">
-                            <a href="">
-                                <img src="" alt="">
-                                <p>Paraná</p>
-                                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                            </a>
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news5.png" alt="">
+                                </a>
+                                <a href="#" class="category">Trânsito</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
                         </div>
                         <div class="col-md-3">
-                            <a href="">
-                                <img src="" alt="">
-                                <p>Paraná</p>
-                                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                            </a>
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news6.png" alt="">
+                                </a>
+                                <a href="#" class="category color-green">Esportes</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
                         </div>
                     </div>
                 </div>
                 
             </section>
             
-            <section>
+            <section class="section_green">
                 <div class="container">
                     <div class="row">
-                        <h2>Esporte</h2>
-                        <span><i class="bi bi-plus"></i></span>
+                        <div class="col-12 header_section head_green">
+                            <h2>Esporte</h2>
+                            <span><i class="bi bi-plus-lg"></i></span>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-9">
-                            <div class="row">
+                            <div class="row p-top-20">
                                 <div class="col-md-6">
-                                    <article>
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                    <article class="card_news link_hover">
+                                        <a href="#">
+                                            <img src="assets/img/news.png" alt="">
+                                        </a>
+                                        <a href="#" class="category">Paraná</a>
+                                        <h3><a href="">Cerca de  47% dos veículos do Paraná estão com o licenciamento irregular; saiba o que fazer</a></h3>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
-                                    <a href="">
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                    <a href="" class="card_line link_hover">
+                                        <img src="assets/img/news3.png" alt="">
+                                        <div class="info_card_line">
+                                            <p>pato Branco  </p>
+                                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                        </div>
+                                        
                                     </a>
-                                    <a href="">
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                    <a href="" class="card_line link_hover">
+                                        <img src="assets/img/news5.png" alt="">
+                                        <div class="info_card_line">
+                                            <p>Paraná</p>
+                                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                        </div>
+                                        
                                     </a>
-                                    <a href="">
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                    <a href="" class="card_line link_hover">
+                                        <img src="assets/img/news6.png" alt="">
+                                        <div class="info_card_line">
+                                            <p>Paraná</p>
+                                            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <img src="" alt="">
+                        <div class="col-md-3 p-top-20">
+                            <img class="w-100" src="assets/img/ads.jpg" alt="">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row p-top-20">
                         <div class="col-md-4">
-                            <a href="">
-                                <p>Paraná</p>
+                            <a href="" class="card_simple">
+                                <h4>Paraná</h4>
                                 <p>Foragido da justiça é preso pela Polícia Federal ao desembarcar no Aeroporto de Cascavel</p>
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="">
-                                <p>Policial</p>
+                            <a href="" class="card_simple">
+                                <h4>Policial</h4>
                                 <p>Homem fica em estado grave após ser atropelado por moto na Avenida Piquiri, em Cascavel</p>
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="">
-                                <p>Marechal Candido Rondon</p>
+                            <a href="" class="card_simple">
+                                <h4>Marechal Candido Rondon</h4>
                                 <p>Pais são presos acusados de homícidio de bebê de 3 meses em Marechal, delegado fala sobre o caso</p>
                             </a>
                         </div>
@@ -279,46 +394,60 @@
                 </div>
             </section>
 
-            <section>
+            <section class="bg-gray2">
                 <div class="container">
-                    <img src="" alt="">
+                    <div class="row">
+                        <div class="col-12 p-20">
+                            <img class="w-100" src="assets/img/ads3.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section>
+            <section class="section_wine">
                 <div class="container">
                     <div class="row">
-                        <h2>Agro</h2>
-                        <span><i class="bi bi-plus"></i></span>
+                        <div class="col-12 header_section head_wine">
+                            <h2 class="color-wine">Agro</h2>
+                            <span><i class="bi bi-plus-lg"></i></span>
+                        </div>
                     </div>
-                    <div class="row">
+                    <div class="row p-top-20">
                         <div class="col-md-3">
-                            <a href="">
-                                <img src="" alt="">
-                                <p>Paraná</p>
-                                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                            </a>
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news2.png" alt="">
+                                </a>
+                                <a href="#" class="category">Paraná</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
                         </div>
                         <div class="col-md-3">
-                            <a href="">
-                                <img src="" alt="">
-                                <p>Paraná</p>
-                                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                            </a>
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news4.png" alt="">
+                                </a>
+                                <a href="#" class="category color-light-blue">Pesquisa</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
                         </div>
                         <div class="col-md-3">
-                            <a href="">
-                                <img src="" alt="">
-                                <p>Paraná</p>
-                                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                            </a>
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news5.png" alt="">
+                                </a>
+                                <a href="#" class="category">Trânsito</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
                         </div>
                         <div class="col-md-3">
-                            <a href="">
-                                <img src="" alt="">
-                                <p>Paraná</p>
-                                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                            </a>
+                            <article class="card_news_small link_hover">
+                                <a href="#">
+                                    <img src="assets/img/news6.png" alt="">
+                                </a>
+                                <a href="#" class="category color-green">Esportes</a>
+                                <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -328,56 +457,64 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 section_pink">
                             <div class="row">
-                                <h2>Entretenimento</h2>
-                                <span><i class="bi bi-plus"></i></span>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <a href="">
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                                    </a>
-                                </div>
-                                <div class="col-md-6">
-                                    <a href="">
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                                    </a>
+                                <div class="col-12 header_section head_pink">
+                                    <h2 class="color-wine">Entretenimento</h2>
+                                    <span><i class="bi bi-plus-lg"></i></span>
                                 </div>
                             </div>
                             <div class="row">
-                                <a href=""><strong>Cascavel</strong> - <span>Papai Noel e prefeito Paranhos recebem crianças atendidas pelo CCIs na prefeitura</span></a>
-                                <a href=""><strong>Cascavel</strong> - <span>Papai Noel e prefeito Paranhos recebem crianças atendidas pelo CCIs na prefeitura</span></a>
+                                <div class="col-12 d-flex over_cards_small p-top-20">
+                                    <article class="card_news_small link_hover">
+                                        <a href="#">
+                                            <img src="assets/img/news2.png" alt="">
+                                        </a>
+                                        <a href="#" class="category">Cotidiano</a>
+                                        <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                                    </article>
+                                    <article class="card_news_small link_hover">
+                                        <a href="#">
+                                            <img src="assets/img/news3.png" alt="">
+                                        </a>
+                                        <a href="#" class="category">Policial</a>
+                                        <h3><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a class="card_line_simple" href=""><strong class="color-pink">Cascavel</strong> - <span>Papai Noel e prefeito Paranhos recebem crianças atendidas pelo CCIs na prefeitura</span></a>
+                                <a class="card_line_simple" href=""><strong class="color-pink">Cascavel</strong> - <span>Papai Noel e prefeito Paranhos recebem crianças atendidas pelo CCIs na prefeitura</span></a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 section_blue">
                             <div class="row">
-                                <h2>Entretenimento</h2>
-                                <span><i class="bi bi-plus"></i></span>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <a href="">
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                                    </a>
-                                </div>
-                                <div class="col-md-6">
-                                    <a href="">
-                                        <img src="" alt="">
-                                        <p>Paraná</p>
-                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
-                                    </a>
+                                <div class="col-12 header_section head_blue">
+                                    <h2 class="color-wine">Política</h2>
+                                    <span><i class="bi bi-plus-lg"></i></span>
                                 </div>
                             </div>
                             <div class="row">
-                                <a href=""><strong>Cascavel</strong> - <span>Papai Noel e prefeito Paranhos recebem crianças atendidas pelo CCIs na prefeitura</span></a>
-                                <a href=""><strong>Cascavel</strong> - <span>Papai Noel e prefeito Paranhos recebem crianças atendidas pelo CCIs na prefeitura</span></a>
+                                <div class="col-12 d-flex over_cards_small p-top-20">
+                                    <article class="card_news_small link_hover">
+                                        <a href="#">
+                                            <img src="assets/img/news2.png" alt="">
+                                        </a>
+                                        <a href="#" class="category">Cotidiano</a>
+                                        <h3><a href="#" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                                    </article>
+                                    <article class="card_news_small link_hover">
+                                        <a href="#">
+                                            <img src="assets/img/news3.png" alt="">
+                                        </a>
+                                        <a href="#" class="category">Policial</a>
+                                        <h3><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</a></h3>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a class="card_line_simple" href=""><strong class="color-blue">Cascavel</strong> - <span>Papai Noel e prefeito Paranhos recebem crianças atendidas pelo CCIs na prefeitura</span></a>
+                                <a class="card_line_simple" href=""><strong class="color-blue">Cascavel</strong> - <span>Papai Noel e prefeito Paranhos recebem crianças atendidas pelo CCIs na prefeitura</span></a>
                             </div>
                         </div>
                     </div>
@@ -388,35 +525,39 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <h2>Mais Lidas</h2>
+                            <div class="head_line">
+                                <h2>Mais Lidas</h2>
+                            </div>
 
-                            <section>
-                                <a href="">
+                            <section class="p-top-20">
+                                <a href="" class="card_line_single">
                                     <p>Paraná</p>
                                     <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
                                 </a>
-                                <a href="">
-                                    <p>Paraná</p>
+                                <a href="" class="card_line_single">
+                                    <p>Política</p>
                                     <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
                                 </a>
-                                <a href="">
-                                    <p>Paraná</p>
+                                <a href="" class="card_line_single">
+                                    <p>Brasil</p>
                                     <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
                                 </a>
-                                <a href="">
-                                    <p>Paraná</p>
+                                <a href="" class="card_line_single">
+                                    <p>Trânsito</p>
                                     <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
                                 </a>
-                                <a href="">
+                                <a href="" class="card_line_single">
                                     <p>Paraná</p>
                                     <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
                                 </a>
                             </section>
                         </div>
                         <div class="col-md-4">
-                            <h2>Últimas Notícias</h2>
+                            <div class="head_line">
+                                <h2>Últimas Notícias</h2>
+                            </div>
 
-                            <section>
+                            <section class="p-top-20">
                                 <a href="">
                                     <p><span>Há 1 horas</span> | Cascavel</p>
                                     <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptate dicta mollitia ex eius</h3>
@@ -440,7 +581,7 @@
                             </section>
                         </div>
                         <div class="col-md-4">
-                            <img src="" alt="">
+                            <img class="w-100" src="assets/img/ads4.jpg" alt="">
                         </div>
                     </div>
                 </div>
