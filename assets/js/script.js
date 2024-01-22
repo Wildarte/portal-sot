@@ -36,3 +36,30 @@ btn_search.addEventListener('click', () => {
     }
 
 });
+
+//=============================== menu mobile ======================================
+const menu_itens = document.querySelectorAll('nav.menu > ul > li.has-submenu');
+const sub_menu = document.querySelectorAll('nav.menu > ul > li.has-submenu > ul.sub-menu');
+
+menu_itens.forEach((item, index) => {
+
+    item.addEventListener('click', (e) => {
+
+        e.preventDefault();
+
+        if(sub_menu[index].classList.contains('open_submenu')){
+            sub_menu[index].classList.remove('open_submenu')
+        }else{
+            sub_menu.forEach((item2) => {
+                item2.classList.remove('open_submenu');
+            });
+    
+            sub_menu[index].classList.add('open_submenu')
+        }
+
+        
+
+    });
+
+});
+//=============================== menu mobile ======================================
